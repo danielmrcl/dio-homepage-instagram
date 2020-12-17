@@ -1,0 +1,174 @@
+/* limpando e formatando alguns campos */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* Formatando o elemento body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+/* Formatando o bloco principal */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+/* Formatando o bloco da esquerda */
+.w-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* Formatando a imagem dentro do bloco da esquerda */
+.w-left img {
+    height: 50rem;
+}
+
+/* Formatando o bloco da direita */
+.w-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+/* Formatando os blocos agrupados */
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 70%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/* Formatando o primeiro bloco dos blocos agrupados */
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+/* Formatando a imagem do logo do instagram */
+.instagram-logo {
+    height: 3rem;
+}
+
+/* Formatando o bloco da foto de perfil */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Formatando a imagem dentro do bloco da foto de perfil */
+.profile-photo img {
+    height: 6rem;
+}
+
+/* Formatando o botão de login */
+.instagram-login {
+    background-color: #0095e6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Formatando o botão de logout */
+.instagram-logout {
+    color: #0095e6;
+    margin-top: 1rem;
+}
+
+/* Trocando a cor do botão de trocar conta */
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+/* Trocando a cor dos links */
+.link-blue {
+    color: #0095e6;
+}
+
+/* Formatando o bloco de botões de download */
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+/* Formatando os botões de download */
+.get-app-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+/* Adicionando a imagem do primeiro botão */
+.app-download:nth-child(1) {
+    background-image: url("./images/appstore-badge.png");
+}
+
+/* Adicionando a imagem do segundo botão */
+.app-download:nth-child(2) {
+    background-image: url("./images/playstore-badge.png");
+}
+
+/* Configurando media queries */
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .w-left {
+        display: none;
+    }
+
+    .w-right {
+        width: 60%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
